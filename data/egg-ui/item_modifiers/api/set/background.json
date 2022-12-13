@@ -1,0 +1,13 @@
+[
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{egg_ui: {element: 1b, type: \"background\"}}"
+    },
+    {
+        "function": "minecraft:set_name",
+        "name": {
+            "text": "",
+            "italic": false
+        }
+    }
+]
