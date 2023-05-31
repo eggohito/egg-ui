@@ -9,9 +9,11 @@
 tag @s add egg_ui.selected.item
 
 
-#   Copy the `Thrower` NBT of the item entity, paste it into the `input.a` NBT of the `egg-ui:io` command NBT storage and execute as all players to find the player that has the matching UUID
+#   Copy the `Thrower` NBT of the item entiyt to the `input.a` NBT of the `egg:ui/io` storage
 data modify storage egg:ui/io input.a set from entity @s Thrower
 
+
+#   Get the UUIDs of all players and compare it to the UUIDs from the `input.a` NBT of the `egg:ui/io` storage
 execute as @a run function egg-ui:impl/player/get_uuid
 
 

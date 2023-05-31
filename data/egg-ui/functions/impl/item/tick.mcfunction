@@ -2,7 +2,7 @@
 #
 #   > Tick all item entities that have the `{Item: {tag: {egg_ui: {element: 1b}}}}` NBT
 #
-#@within egg-ui:private/tick
+#@within egg-ui:tick
 
 
 #   Compare the item entity's `Thrower` NBT to the `UUID` NBT of all players

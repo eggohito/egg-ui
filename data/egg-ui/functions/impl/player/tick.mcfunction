@@ -2,7 +2,7 @@
 #
 #   > Tick all player entities
 #
-#@within function egg-ui:private/tick
+#@within function egg-ui:tick
 
 
 #   Check if the player has an item that has the `{egg_ui: {element: 1b}}` NBT in its inventory

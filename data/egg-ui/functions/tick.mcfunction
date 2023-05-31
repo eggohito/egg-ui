@@ -1,8 +1,8 @@
-#> egg-ui:private/tick
+#> egg-ui:tick
 #
 #@within
-#   function egg-ui:private/load
-#   function egg-ui:private/tick
+#   function egg-ui:load
+#   function egg-ui:tick
 
 
 #   Tick all item entities that have the `Item.tag.egg_ui` NBT
@@ -14,4 +14,4 @@ execute as @a run function egg-ui:impl/player/tick
 
 
 #   Loop this function
-schedule function egg-ui:private/tick 1t
+schedule function egg-ui:tick 1t

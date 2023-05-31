@@ -9,9 +9,11 @@
 tag @s add egg_ui.selected.player
 
 
-#   Copy the `UUID` NBT of the player, paste it into the `input.b` NBT of the `egg-ui:io` command NBT storage and compare the UUIDs in the `input.a` and `input.b` NBTs of the `egg-ui:io` command NBT storage
+#   Copy the `UUID` NBT of the player to the `input.b` NBT of the `egg:ui/io` storage
 data modify storage egg:ui/io input.b set from entity @s UUID
 
+
+#   Compare the UUIDs from the `input.a` and `input.b` NBTs of the `egg:ui/io` storage
 function egg-ui:impl/uuid/compare
 
 

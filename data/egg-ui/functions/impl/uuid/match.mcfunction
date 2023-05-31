@@ -5,8 +5,8 @@
 #@within egg-ui:impl/uuid/compare
 
 
-#   Copy the `egg_ui` data of the item entity
-execute as @e[type = minecraft:item, tag = egg_ui.selected.item] run data modify storage egg:ui/io output set from entity @s Item.tag.egg_ui
+#   Copy the `egg_ui` data of the item entity that has the `egg_ui.selected.item` tag
+data modify storage egg:ui/io output set from entity @e[type = minecraft:item, tag = egg_ui.selected.item, limit = 1] Item.tag.egg_ui
 
 
 #   Add an `egg_ui.screen.reset` tag to the player
