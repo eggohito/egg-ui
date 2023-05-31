@@ -10,18 +10,5 @@
             "color": "green",
             "italic": false
         }
-    },
-    {
-    	"function": "minecraft:set_lore",
-    	"entity": "this",
-    	"lore": [
-    		{
-    			"storage": "egg:ui/example/input_testing",
-    			"nbt": "input[]",
-    			"separator": "",
-    			"color": "gray",
-    			"italic": true
-    		}
-    	]
     }
 ]
