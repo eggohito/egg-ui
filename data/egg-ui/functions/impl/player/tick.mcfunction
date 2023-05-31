@@ -12,9 +12,9 @@ execute if score #ui_elements.clicked_any egg-ui matches 1.. run tag @s add egg_
 
 
 #   Check if the player has an item that has the `{egg_ui: {type: "clickable_button"}}` NBT in its inventory
-execute store result score #ui_elements.clicked_button egg-ui run clear @s #egg-ui:all{egg_ui: {type: "clickable_button"}} 0
+execute store success score #ui_elements.clicked_button egg-ui run clear @s #egg-ui:all{egg_ui: {type: "clickable_button"}} 0
 
-execute if score #ui_elements.clicked_button egg-ui matches 1.. run function #egg-ui:api/click_button
+execute if score #ui_elements.clicked_button egg-ui matches 1 run function #egg-ui:api/click_button
 
 
 #   Do some clean up
