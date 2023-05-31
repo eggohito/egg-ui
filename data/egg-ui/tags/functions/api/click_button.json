@@ -1,0 +1,7 @@
+{
+    "values": [
+        "example:egg-ui/button/yes",
+        "example:egg-ui/button/maybe",
+        "example:egg-ui/button/no"
+    ]
+}

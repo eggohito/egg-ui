@@ -1,0 +1,20 @@
+{
+    "type": "apoli:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "apoli:and",
+        "actions": [
+            {
+                "type": "apoli:execute_command",
+                "command": "me like eggs :)"
+            }
+        ]
+    },
+    "condition": {
+        "type": "apoli:command",
+        "command": "tag @s remove egg_ui.clicked_button.example.yes",
+        "comparison": ">=",
+        "compare_to": 1
+    },
+    "hidden": true
+}

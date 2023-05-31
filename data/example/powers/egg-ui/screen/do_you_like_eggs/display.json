@@ -1,0 +1,27 @@
+{
+    "type": "apoli:inventory",
+    "container_type": "hopper",
+    "title": "Do you like eggs?",
+    "drop_on_death": false,
+    "recoverable": false,
+    "key": {
+        "key": "key.hotbar.9"
+    },
+    "name": "Do you like Eggs?",
+    "description": "An example power that brings up a pseudo-custom GUI.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "minecraft:textures/item/egg.png",
+            "text": [
+                "Hmm, egg.\nPress ",
+                {
+                    "keybind": "key.hotbar.9",
+                    "color": "yellow",
+                    "bold": true
+                },
+                " to bring up the screen!"
+            ]
+        }
+    ]
+}

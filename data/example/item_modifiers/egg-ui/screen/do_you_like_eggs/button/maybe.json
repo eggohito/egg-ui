@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{egg_ui: {data: {id: \"example:maybe\"}}}"
+    },
+    {
+        "function": "minecraft:set_name",
+        "name": {
+            "text": "Maybe...",
+            "color": "gold",
+            "italic": false
+        }
+    }
+]

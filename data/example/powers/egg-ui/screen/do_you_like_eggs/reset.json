@@ -1,0 +1,11 @@
+{
+    "type": "apoli:active_self",
+    "entity_action": {
+        "type": "apoli:execute_command",
+        "command": "tag @s add egg_ui.screen.reset"
+    },
+    "key": {
+        "key": "key.hotbar.9"
+    },
+    "hidden": true
+}

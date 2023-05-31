@@ -1,0 +1,114 @@
+{
+    "type": "apoli:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "apoli:and",
+        "actions": [
+            {
+                "type": "apoli:drop_inventory",
+                "inventory_type": "power",
+                "power": "example:egg-ui/screen/do_you_like_eggs/display",
+                "item_condition": {
+                    "type": "apoli:nbt",
+                    "nbt": "{egg_ui: {element: 1b}}",
+                    "inverted": true
+                }
+            },
+            {
+                "type": "apoli:replace_inventory",
+                "inventory_type": "power",
+                "item_action": {
+                    "type": "apoli:modify",
+                    "modifier": "egg-ui:api/set/background"
+                },
+                "slots": [
+                    "container.0",
+                    "container.4"
+                ],
+                "power": "example:egg-ui/screen/do_you_like_eggs/display",
+                "stack": {
+                    "item": "minecraft:gray_stained_glass_pane"
+                }
+            },
+            {
+                "type": "apoli:replace_inventory",
+                "inventory_type": "power",
+                "item_action": {
+                    "type": "apoli:and",
+                    "actions": [
+                        {
+                            "type": "apoli:modify",
+                            "modifier": "egg-ui:api/set/clickable_button"
+                        },
+                        {
+                            "type": "apoli:modify",
+                            "modifier": "example:egg-ui/screen/do_you_like_eggs/button/yes"
+                        }
+                    ]
+                },
+                "slots": [
+                    "container.1"
+                ],
+                "power": "example:egg-ui/screen/do_you_like_eggs/display",
+                "stack": {
+                    "item": "minecraft:lime_stained_glass_pane"
+                }
+            },
+            {
+                "type": "apoli:replace_inventory",
+                "inventory_type": "power",
+                "item_action": {
+                    "type": "apoli:and",
+                    "actions": [
+                        {
+                            "type": "apoli:modify",
+                            "modifier": "egg-ui:api/set/clickable_button"
+                        },
+                        {
+                            "type": "apoli:modify",
+                            "modifier": "example:egg-ui/screen/do_you_like_eggs/button/maybe"
+                        }
+                    ]
+                },
+                "slots": [
+                    "container.2"
+                ],
+                "power": "example:egg-ui/screen/do_you_like_eggs/display",
+                "stack": {
+                    "item": "minecraft:orange_stained_glass_pane"
+                }
+            },
+            {
+                "type": "apoli:replace_inventory",
+                "inventory_type": "power",
+                "item_action": {
+                    "type": "apoli:and",
+                    "actions": [
+                        {
+                            "type": "apoli:modify",
+                            "modifier": "egg-ui:api/set/clickable_button"
+                        },
+                        {
+                            "type": "apoli:modify",
+                            "modifier": "example:egg-ui/screen/do_you_like_eggs/button/no"
+                        }
+                    ]
+                },
+                "slots": [
+                    "container.3"
+                ],
+                "power": "example:egg-ui/screen/do_you_like_eggs/display",
+                "stack": {
+                    "item": "minecraft:red_stained_glass_pane"
+                }
+            }
+        ]
+    },
+    "condition": {
+        "type": "apoli:command",
+        "command": "tag @s remove egg_ui.screen.reset",
+        "comparison": ">=",
+        "compare_to": 1
+    },
+    "hidden": true
+}

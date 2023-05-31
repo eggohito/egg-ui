@@ -1,0 +1,6 @@
+{
+    "origins": [
+        "example:origin",
+        "test:origin"
+    ]
+}

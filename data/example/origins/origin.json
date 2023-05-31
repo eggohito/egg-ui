@@ -1,0 +1,14 @@
+{
+    "powers": [
+
+        "example:egg-ui/screen/do_you_like_eggs/button/maybe",
+        "example:egg-ui/screen/do_you_like_eggs/button/no",
+        "example:egg-ui/screen/do_you_like_eggs/button/yes",
+        "example:egg-ui/screen/do_you_like_eggs/display",
+        "example:egg-ui/screen/do_you_like_eggs/reset",
+        "example:egg-ui/screen/do_you_like_eggs/set_contents"
+
+    ],
+    "name": "Example",
+    "description": "An example origin."
+}
