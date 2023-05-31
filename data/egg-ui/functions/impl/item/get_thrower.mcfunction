@@ -9,7 +9,7 @@
 tag @s add egg_ui.selected.item
 
 
-#   Copy the `Thrower` NBT of the item entiyt to the `input.a` NBT of the `egg:ui/io` storage
+#   Copy the `Thrower` NBT of the item entity to the `input.a` NBT of the `egg:ui/io` storage
 data modify storage egg:ui/io input.a set from entity @s Thrower
 
 
